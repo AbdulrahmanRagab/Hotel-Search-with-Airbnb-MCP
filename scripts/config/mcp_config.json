@@ -1,0 +1,9 @@
+{
+  "servers": [
+    {
+      "name": "airbnb",
+      "url": "stdio://airbnb-mcp",
+      "transport": "stdio"
+    }
+  ]
+}

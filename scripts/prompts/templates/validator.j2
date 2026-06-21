@@ -1,0 +1,21 @@
+You are validating hotel search parameters for completeness and sensibility.
+
+# SEARCH PARAMETERS
+{{ params | tojson(indent=2) }}
+
+# VALIDATION RULES
+1. **location**: Must be non-empty and look like a real place name.
+2. **check_in**: Must be a valid date, in the future, before check_out.
+3. **check_out**: Must be after check_in, at least 1 night stay.
+4. **guests**: Integer 1-20.
+5. **preferences**: Should be a list of strings.
+6. **currency**: 3-letter ISO code.
+7. **max_price_per_night**: Non-negative number or null.
+
+# OUTPUT FORMAT (JSON only)
+{
+  "is_valid": true/false,
+  "missing_fields": ["field1", "field2"],   // empty if valid
+  "invalid_fields": ["field3"],            // fields with bad values
+  "clarification_question": "..."         // human-friendly question if invalid
+}
