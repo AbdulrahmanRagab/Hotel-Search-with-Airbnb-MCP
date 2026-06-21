@@ -5,7 +5,6 @@
 ![LangChain](https://img.shields.io/badge/langchain-v1.2%2B-green)
 ![Gradio](https://img.shields.io/badge/gradio-v4%2B-orange)
 ![Groq](https://img.shields.io/badge/llm-groq%20llama--3.3--70b-yellow)
-![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ---
 
